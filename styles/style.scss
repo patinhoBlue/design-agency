@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary--color: #d7f5dc;
+  --second--color: #20b15a;
+  --third--color: #f55f1d;
+}
+
+.margin-main {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 95%;
+}
+header {
+  background-color: var(--primary--color);
+  height: 959.41px;
+  width: 100%;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+
+  .menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      strong {
+        color: var(--third--color);
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 22px;
+      }
+    }
+    .menu-lateral {
+      nav {
+        width: 100%;
+
+        li {
+          list-style-type: none;
+        }
+        ul {
+          gap: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          span {
+            gap: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+              cursor: pointer;
+              width: 100px;
+              height: 50px;
+              border-radius: 11.4625px;
+              background-color: transparent;
+              font-size: 18px;
+              font-weight: 500;
+              border: 1px solid var(--second--color);
+              color: black;
+              &:nth-child(2) {
+                background-color: var(--second--color);
+                color: white;
+              }
+            }
+          }
+        }
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+          font-size: 18px;
+        }
+        @media screen and (max-width: 740px) {
+          display: none;
+        }
+      }
+      .menu-mobile {
+        display: none;
+
+        button {
+          cursor: pointer;
+          background-color: transparent;
+          border: 0;
+
+          width: 30px;
+          height: 30px;
+          hr {
+            margin-top: 2px;
+            padding: 1.5px;
+            background-color: black;
+          }
+        }
+
+        @media screen and (max-width: 740px) {
+          display: block;
+        }
+      }
+    }
+  }
+  .h-body {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    .box-text {
+      width: 50%;
+      h1 {
+        font-size: 45px;
+        font-weight: 700;
+      }
+      h4 {
+        font-size: 19px;
+        font-weight: 500;
+      }
+      button {
+        cursor: pointer;
+        margin-top: 20px;
+        width: 190px;
+        height: 70px;
+        border-radius: 18px;
+        background-color: var(--second--color);
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        border: none;
+      }
+    }
+    .woman {
+      width: 770px;
+      height: 600px;
+
+      background-image: url(../img/person/Group\ 38.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  .bloco-apps {
+
+    padding-top: 35px;
+    height: 110px;
+    background-color: #ffffff;
+    .apps {
+      
+      
+      display: flex;
+      justify-content: space-between;
+      
+    }
+  }
+}
