@@ -28,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     .logo {
-      a{
+      a {
         text-decoration: none;
         color: black;
       }
@@ -113,7 +113,6 @@ header {
     margin-top: 50px;
     display: flex;
     align-items: center;
-
     .box-text {
       width: 50%;
       h1 {
@@ -138,6 +137,7 @@ header {
       }
     }
     .woman {
+    
       width: 770px;
       height: 600px;
 
@@ -145,18 +145,30 @@ header {
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
+    @media screen and (max-width: 740px) {
+      
+        flex-direction: column;
+        align-items: baseline;
+        .box-text{
+          width: 100%;
+        }
+        .woman{
+          width: 100%;
+        }
+    }
   }
-  .bloco-apps {
 
+  .bloco-apps {
+   
+    width: 100%;
     padding-top: 35px;
     height: 110px;
     background-color: #ffffff;
+
     .apps {
-      
-      
       display: flex;
       justify-content: space-between;
-      
+      flex-wrap:wrap;
     }
   }
 }
