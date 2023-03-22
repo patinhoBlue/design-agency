@@ -18,10 +18,10 @@
 
 header {
   background-color: var(--primary--color);
-  height: 959.41px;
   width: 100%;
   display: inline-block;
   font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
 }
 header .menu {
   margin-top: 20px;
@@ -80,7 +80,7 @@ header .menu .menu-lateral nav a {
   font-weight: 500;
   font-size: 18px;
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 790px) {
   header .menu .menu-lateral nav {
     display: none;
   }
@@ -100,7 +100,7 @@ header .menu .menu-lateral .menu-mobile button hr {
   padding: 1.5px;
   background-color: black;
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 790px) {
   header .menu .menu-lateral .menu-mobile {
     display: block;
   }
@@ -111,7 +111,7 @@ header .h-body {
   align-items: center;
 }
 header .h-body .box-text {
-  width: 50%;
+  width: 70%;
 }
 header .h-body .box-text h1 {
   font-size: 45px;
@@ -135,31 +135,71 @@ header .h-body .box-text button {
 }
 header .h-body .woman {
   width: 770px;
-  height: 600px;
-  background-image: url(../img/person/Group\ 38.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  height: 500px;
 }
-@media screen and (max-width: 740px) {
+header .h-body .woman img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1092px) {
+  header .h-body .box-text h1 {
+    font-size: 40px;
+  }
+  header .h-body .box-text h4 {
+    font-size: 15px;
+  }
+  header .h-body .box-text button {
+    width: 180px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 790px) {
   header .h-body {
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
   }
   header .h-body .box-text {
+    text-align: center;
     width: 100%;
   }
   header .h-body .woman {
-    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .h-body .woman {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .h-body .woman {
+    height: 390px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .h-body .woman {
+    height: 300px;
   }
 }
 header .bloco-apps {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  padding-top: 35px;
-  height: 110px;
+  height: 100%;
   background-color: #ffffff;
+  padding: 20px;
 }
 header .bloco-apps .apps {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+}
+header .bloco-apps .apps img {
+  width: 110px;
+  height: 55px;
+  padding-left: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -17,10 +17,11 @@
 }
 header {
   background-color: var(--primary--color);
-  height: 959.41px;
+
   width: 100%;
   display: inline-block;
   font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
 
   .menu {
     margin-top: 20px;
@@ -82,7 +83,7 @@ header {
           font-weight: 500;
           font-size: 18px;
         }
-        @media screen and (max-width: 740px) {
+        @media screen and (max-width: 790px) {
           display: none;
         }
       }
@@ -103,7 +104,7 @@ header {
           }
         }
 
-        @media screen and (max-width: 740px) {
+        @media screen and (max-width: 790px) {
           display: block;
         }
       }
@@ -114,7 +115,7 @@ header {
     display: flex;
     align-items: center;
     .box-text {
-      width: 50%;
+      width: 70%;
       h1 {
         font-size: 45px;
         font-weight: 700;
@@ -137,38 +138,90 @@ header {
       }
     }
     .woman {
-    
       width: 770px;
-      height: 600px;
-
-      background-image: url(../img/person/Group\ 38.png);
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-    }
-    @media screen and (max-width: 740px) {
+      height: 500px;
+       img{
+        width: 100%;
+        height: 100%;
+       }
+     
       
-        flex-direction: column;
-        align-items: baseline;
-        .box-text{
-          width: 100%;
+    }
+    @media screen and (max-width: 1092px) {
+      .box-text {
+    
+        h1 {
+          font-size: 40px;
+       
         }
-        .woman{
-          width: 100%;
+        h4 {
+          font-size: 15px;
+        
         }
+        button {
+          
+          width: 180px;
+          height: 60px;
+          font-size: 18px;
+        }
+      }
+    }
+    @media screen and (max-width: 790px) {
+      flex-direction: column;
+      align-items: center;
+       
+      .box-text{
+        
+       text-align: center;
+        width: 100%;
+      }
+      .woman{
+        text-align: center;
+        padding-top: 10px;
+        width: 90%;
+        
+      }
+    }
+   
+   
+    @media screen and (max-width: 600px) {
+      
+      .woman{
+        height: 450px;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      
+      .woman{
+        height: 390px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      
+      .woman{
+        height: 300px;
+      }
     }
   }
 
   .bloco-apps {
-   
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    padding-top: 35px;
-    height: 110px;
+    height: 100%;
     background-color: #ffffff;
-
+    padding: 20px;
     .apps {
       display: flex;
       justify-content: space-between;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
+      align-items: center;
+      img {
+        width: 110px;
+        height: 55px;
+        padding-left: 10px;
+      }
     }
   }
 }
