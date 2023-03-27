@@ -191,6 +191,7 @@ header .bloco-apps {
   height: 100%;
   background-color: #ffffff;
   padding: 20px;
+  justify-content: center;
 }
 header .bloco-apps .apps {
   display: flex;
@@ -229,7 +230,7 @@ main .main-top .box-1-main-top {
 }
 main .main-top .box-1-main-top .box-1 {
   width: 360px;
-  height: 415px;
+  height: 390px;
   padding: 30px;
 }
 main .main-top .box-1-main-top .box-1 .icons-box-1 {
@@ -255,12 +256,15 @@ main .main-top .box-1-main-top .box-1 p {
 main .main-top .box-1-main-top .box-1 a {
   display: flex;
   align-items: center;
-  padding-top: 60px;
+  margin-top: 65px;
   padding-left: 20px;
   text-decoration: none;
   color: black;
   font-size: 18px;
   font-weight: 400;
+}
+main .main-top .box-1-main-top .box-1 a:hover {
+  color: var(--third--color);
 }
 main .main-top .box-1-main-top .box-2 .icons-box-1 {
   background-image: url(../img/icons/Heart.svg);
@@ -268,4 +272,42 @@ main .main-top .box-1-main-top .box-2 .icons-box-1 {
 }
 main .main-top .box-1-main-top .box-3 .icons-box-1 {
   background-image: url(../img/icons/Work.svg);
+}
+main .main-top .box-two-main {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 50px; */
+}
+main .main-top .box-two-main .box-two {
+  padding: 30px;
+  text-align: center;
+}
+main .main-top .box-two-main .box-two img {
+  width: 60px;
+}
+main .main-top .box-two-main .box-two p {
+  font-size: 16px;
+  font-weight: 500;
+}
+main .main-top .box-two-main .box-two h1 {
+  padding-top: 10px;
+  font-weight: 600;
+  color: var(--second--color);
+  font-size: 38px;
+}
+main .main-mid {
+  padding-top: 40px;
+}
+main .main-mid h3 {
+  font-size: 18px;
+  color: var(--second--color);
+  font-weight: 500;
+}
+main .main-mid h2 {
+  padding-top: 15px;
+  font-size: 28px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

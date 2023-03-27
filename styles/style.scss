@@ -200,11 +200,13 @@ header {
     height: 100%;
     background-color: #ffffff;
     padding: 20px;
+    justify-content: center;
     .apps {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
+      
       img {
         width: 110px;
         height: 55px;
@@ -238,7 +240,7 @@ main {
       .box-1 {
 
         width: 360px;
-        height: 415px;
+        height: 390px;
 
         padding: 30px;
         .icons-box-1 {
@@ -266,12 +268,15 @@ main {
           
           display: flex;
           align-items: center;
-          padding-top: 60px;
+          margin-top: 65px;
           padding-left: 20px;
           text-decoration: none;
           color: black;
           font-size: 18px;
-          font-weight: 400;       
+          font-weight: 400;
+          &:hover{
+            color: var(--third--color);
+          }       
         }
        
       }
@@ -289,6 +294,51 @@ main {
         }
       }
       
+    }
+  
+  .box-two-main{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 50px; */
+
+    .box-two{
+      padding: 30px;
+      text-align: center;
+      img{
+        width: 60px;
+
+      }
+      p{
+        font-size: 16px;
+        font-weight: 500;
+      }
+      h1{
+        
+        padding-top: 10px;
+        font-weight: 600;
+        color: var(--second--color);
+        font-size: 38px;
+      }
+    }
+   }
+  }
+ 
+  .main-mid{
+    padding-top: 40px;
+
+    h3{
+      font-size: 18px;
+      color: var(--second--color);
+      font-weight: 500;
+    }
+    h2{ 
+      padding-top: 15px;
+      font-size: 28px;
+      font-weight: 600;
+    
     }
   }
 }
