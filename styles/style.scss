@@ -216,7 +216,7 @@ header {
 main {
   font-family: "Poppins", sans-serif;
   .main-top {
-    padding: 30px;
+    padding-top: 50px;
     .title-main-top {
       h3 {
         font-size: 18px;
@@ -224,34 +224,71 @@ main {
         font-weight: 500;
       }
       h2 {
+        padding-top: 15px;
         font-size: 28px;
         font-weight: 600;
       }
     }
-    .box-1-main-top{
-     display: flex;
-      .box-1{
-        .icons-box-1{
+    .box-1-main-top {
+      padding-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+      .box-1 {
+
+        width: 360px;
+        height: 415px;
+
+        padding: 30px;
+        .icons-box-1 {
           background-color: var(--primary--color);
           background-image: url(../img/icons/Activity.svg);
           background-repeat: no-repeat;
           background-position: center;
+          background-size: 30px 30px;
           width: 80px;
           height: 80px;
           border-radius: 20px;
-          &:nth-child(2){
-            background-image: url(../img/icons/Activity.svg);
-          }
+        }
+        h3{
+          padding-top: 15px;
+          font-weight: 600;
+          font-size: 24px;
 
         }
-
+        p{
+          padding-top: 15px;
+          font-size: 18px;
+          font-weight: 400;
+        }
+        a{
+          
+          display: flex;
+          align-items: center;
+          padding-top: 60px;
+          padding-left: 20px;
+          text-decoration: none;
+          color: black;
+          font-size: 18px;
+          font-weight: 400;       
+        }
+       
       }
-      .box-2{
-
+      .box-2 {
+        
+        .icons-box-1 {
+          background-image: url(../img/icons/Heart.svg);
+          background-size: 80px;
+        }
       }
-      .box-3{
-
+      .box-3 {
+       
+        .icons-box-1 {
+          background-image: url(../img/icons/Work.svg);
+        }
       }
+      
     }
   }
 }
