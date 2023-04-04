@@ -163,6 +163,9 @@ header .h-body .woman img {
     text-align: center;
     width: 100%;
   }
+  header .h-body .box-text h1 {
+    font-size: 35px;
+  }
   header .h-body .woman {
     text-align: center;
     padding-top: 10px;
@@ -229,12 +232,6 @@ main .main-top .box-1-main-top {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
-  /*  @media  screen and (max-width: 810px){
-     .box-1{
-       align-items: center;
-     }
-
-   } */
 }
 main .main-top .box-1-main-top .box-1 {
   width: 360px;
@@ -281,6 +278,30 @@ main .main-top .box-1-main-top .box-2 .icons-box-1 {
 main .main-top .box-1-main-top .box-3 .icons-box-1 {
   background-image: url(../img/icons/Work.svg);
 }
+@media screen and (max-width: 800px) {
+  main .main-top .title-main-top {
+    width: 100%;
+    text-align: center;
+  }
+  main .main-top .title-main-top h3 {
+    font-size: 18px;
+  }
+  main .main-top .title-main-top h2 {
+    font-size: 24px;
+  }
+  main .main-top .box-1-main-top {
+    justify-content: center;
+  }
+  main .main-top .box-1-main-top .box-1 {
+    text-align: center;
+  }
+  main .main-top .box-1-main-top .box-1 .icons-box-1 {
+    margin: 0 auto;
+  }
+  main .main-top .box-1-main-top .box-1 a {
+    justify-content: center;
+  }
+}
 main .main-top .box-two-main {
   padding: 30px;
   width: 100%;
@@ -310,12 +331,12 @@ main .main-mid {
   padding-top: 40px;
   width: 90%;
 }
-main .main-mid h3 {
+main .main-mid .title-main-mid h3 {
   font-size: 18px;
   color: var(--second--color);
   font-weight: 500;
 }
-main .main-mid h2 {
+main .main-mid .title-main-mid h2 {
   padding-top: 15px;
   font-size: 28px;
   font-weight: 600;
@@ -348,6 +369,11 @@ main .main-mid .portfolio-main .column .box-portfolio p {
 }
 main .main-mid .portfolio-main .column .box-portfolio img {
   width: 100%;
+}
+@media screen and (max-width: 1222px) {
+  main .main-mid .portfolio-main {
+    justify-content: center;
+  }
 }
 main .main-mid .main-final-top {
   padding-top: 60px;
@@ -430,6 +456,16 @@ main .main-mid .footer-main .box-subscribe {
   padding-top: 70px;
   text-align: center;
 }
+main .main-mid .footer-main .box-subscribe h3 {
+  font-size: 18px;
+  color: var(--second--color);
+  font-weight: 500;
+}
+main .main-mid .footer-main .box-subscribe h2 {
+  padding-top: 15px;
+  font-size: 28px;
+  font-weight: 600;
+}
 main .main-mid .footer-main .box-subscribe p {
   font-size: 15px;
   color: #8b8b8b;
@@ -463,6 +499,45 @@ main .main-mid .footer-main .box-subscribe form button {
   border-radius: 15px;
   color: #ffffff;
   font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  main .main-mid .title-main-mid {
+    width: 100%;
+    text-align: center;
+  }
+  main .main-mid .title-main-mid h3 {
+    font-size: 18px;
+  }
+  main .main-mid .title-main-mid h2 {
+    font-size: 24px;
+  }
+  main .main-mid .main-final-top {
+    width: 100%;
+    justify-content: center;
+  }
+  main .main-mid .main-final-top .title-main-final {
+    width: 100%;
+    text-align: center;
+  }
+  main .main-mid .main-final-top .title-main-final h3 {
+    font-size: 18px;
+  }
+  main .main-mid .main-final-top .title-main-final h2 {
+    font-size: 24px;
+  }
+  main .main-mid .main-final-top .btn-l button {
+    width: 55px;
+    height: 55px;
+  }
+  main .main-mid .main-final-top .btn-l button i {
+    font-size: 20px;
+  }
+  main .main-mid .box-c {
+    scale: 0.9;
+  }
+  main .main-mid .footer-main .box-subscribe h2 {
+    font-size: 24px;
+  }
 }
 
 footer {

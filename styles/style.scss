@@ -167,6 +167,11 @@ header {
       .box-text {
         text-align: center;
         width: 100%;
+        h1{
+          font-size: 35px;
+
+        }
+       
       }
       .woman {
         text-align: center;
@@ -289,12 +294,31 @@ main {
           background-image: url(../img/icons/Work.svg);
         }
       }
-     /*  @media  screen and (max-width: 810px){
-        .box-1{
-          align-items: center;
+    }
+    @media screen and (max-width: 800px) {
+      .title-main-top {
+        width: 100%;
+        text-align: center;
+        h3 {
+          font-size: 18px;
         }
-      
-      } */
+        h2 {
+          font-size: 24px;
+        }
+      }
+      .box-1-main-top{
+        justify-content: center;
+        .box-1{
+          text-align: center;
+          .icons-box-1{
+            margin: 0 auto;
+          
+          }
+          a{
+           justify-content: center;
+          }
+        }
+      }
     }
 
     .box-two-main {
@@ -328,16 +352,17 @@ main {
   .main-mid {
     padding-top: 40px;
     width: 90%;
-
-    h3 {
-      font-size: 18px;
-      color: var(--second--color);
-      font-weight: 500;
-    }
-    h2 {
-      padding-top: 15px;
-      font-size: 28px;
-      font-weight: 600;
+    .title-main-mid {
+      h3 {
+        font-size: 18px;
+        color: var(--second--color);
+        font-weight: 500;
+      }
+      h2 {
+        padding-top: 15px;
+        font-size: 28px;
+        font-weight: 600;
+      }
     }
     .portfolio-main {
       display: flex;
@@ -368,12 +393,16 @@ main {
           }
         }
       }
+      @media screen and (max-width:1222px) {
+        justify-content: center;
+      }
     }
     .main-final-top {
       padding-top: 60px;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
       .title-main-final {
         h3 {
           font-size: 18px;
@@ -452,6 +481,17 @@ main {
         width: 600px;
         padding-top: 70px;
         text-align: center;
+        h3 {
+          font-size: 18px;
+          color: var(--second--color);
+          font-weight: 500;
+        }
+        h2 {
+          padding-top: 15px;
+          font-size: 28px;
+          font-weight: 600;
+        }
+
         p {
           font-size: 15px;
           color: #8b8b8b;
@@ -489,8 +529,57 @@ main {
         }
       }
     }
+    @media screen and (max-width: 800px) {
+      .title-main-mid {
+        width: 100%;
+        text-align: center;
+        h3 {
+          font-size: 18px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+      }
+
+      .main-final-top {
+        width: 100%;
+        justify-content: center;
+        .title-main-final {
+          width: 100%;
+          text-align: center;
+          h3 {
+            font-size: 18px;
+          }
+          h2 {
+            font-size: 24px;
+          }
+        }
+        .btn-l {
+          button {
+            width: 55px;
+            height: 55px;
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      
+      .box-c {
+        scale: 0.9;
+      }
+      .footer-main {
+        .box-subscribe {
+          h2 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
   }
 }
+
 footer {
   padding-bottom: 10px;
   margin-top: 120px;
@@ -571,8 +660,6 @@ footer {
       }
     }
     .address {
-      
-
       width: 100%;
       padding-top: 15px;
       h4 {
